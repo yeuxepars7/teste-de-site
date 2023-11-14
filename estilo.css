@@ -1,0 +1,1072 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*   font-family: 'Lexend Exa', sans-serif; 
+
+font-family: 'Montserrat', sans-serif;
+
+*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(50deg, #032835,#065471, #032835) no-repeat;
+    background-size: 300%;
+    background-position: 0%;
+    animation-name: gradient;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gradient{
+    from{
+        background-position: 0%;
+    }
+
+    to{
+        background-position: 80%;
+    }
+}
+
+ul,a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container{
+ width: 1440px;
+ margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    padding: 41px;
+}
+
+header nav ul{
+    display: flex;
+    gap: 45px;
+}
+
+
+header nav ul li a{
+    color: #FFF;
+    font-family: Lexend Exa;
+    font-size: 18px;
+    position: relative;
+    transition: .3s ease all;
+}
+
+header nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #DEDEDE;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    transition: .3s ease width;
+}
+
+header nav ul li a:hover:after{
+    width: 100%;
+}
+
+header nav ul li a:hover{
+    color: #ffffff;
+}
+
+div.right-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 177px;
+    height: 805px;
+    position: fixed;
+    top: 35px;
+    right: 0;
+    background: var(--caixas-de-perguntas, rgba(187, 187, 187, 0.473));
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px 0 0 10px;
+    z-index: 1;
+}
+
+div.right-column div{
+    margin-top: 76px;
+}
+
+div.right-column div img{
+    margin: 0 auto;
+    display: block;
+}
+
+div.right-column div .whats-adjust{
+    width: 50px;
+    height: 50px;
+}
+
+div.right-column div .whats-adjust:hover{
+    width: 52px;
+    height: 52px;
+}
+
+div.right-column div .insta-adjust{
+    width: 48px;
+    height: 48px;
+}
+
+div.right-column div .insta-adjust:hover{
+    width: 50px;
+    height: 50px;
+}
+
+div.right-column div .gmail-adjust{
+    width: 50px;
+    height: 40px;
+}
+
+div.right-column div .gmail-adjust:hover{
+    width: 52px;
+    height: 42px;
+}
+
+div.right-column div a{
+    color: #dedede;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Montserrat;
+    font-size: 18px;
+    transition: .3s ease-in all;
+}
+
+div.right-column div a:active{
+    color: #000;
+}
+
+section.hero-section{
+    padding-top: 192px;
+}
+
+section .container{
+    position: relative;
+    max-width: 100%;
+}
+
+section .container .hero-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+section.hero-section .img-maxsuel{
+    width: 450px;
+    height:570px;
+    border-radius: 10px;
+    border: 2px solid #7FA1AE;
+    transition: .5s ease all;
+}
+
+section.hero-section .img-maxsuel:hover{
+    padding: 5px;
+}
+
+section.hero-section div h2{
+    max-width: 495px;
+    height: auto;
+    color: #DEDEDE;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lexend Exa;
+    font-size: 50px;
+    animation-name: apresentacao;
+    animation-duration: 8s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+}
+
+
+
+@keyframes apresentacao{
+    0%{
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    50%{
+        text-shadow: 0px 4px 4px rgba(171, 171, 171, 0.953);
+    }
+
+    100%{
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+
+
+section.hero-section div h2 span{
+    font-weight: 200;
+}
+
+div.links-tablets{
+        display: none;
+    }
+
+section.hero-section .links-android{
+    display: none;
+}
+
+section.hero-section .links-android img{
+    border: 1px solid transparent;
+    width: 22px;
+    height: 22px;
+}
+
+section.hero-section .download-ebook{
+    width: 319px;
+    height: 57px;
+    border-radius: 10px;
+    border: 2px solid #7FA1AE;
+    background: #065471;
+    margin-top: 50px;
+    transition: .2s ease all;
+}
+
+section.hero-section .download-ebook:hover{
+    border: 2px solid #dedede;
+}
+
+section.hero-section .download-ebook a{
+    width: 319px;
+    height: 55px;
+    display: block;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: Lexend Exa;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+
+div.arrow{
+    width: 40px;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+div.arrow img{
+    display: block;
+    animation-name: arrow;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes arrow{
+    from{
+        transform: translateY(0px);
+    }
+
+    to{
+        transform: translateY(15px);
+    }
+}
+
+section.who-i-am{
+    padding-top: 100px;
+    margin-top: 352px;
+}
+
+section.who-i-am div h2{
+    text-align: center;
+    color: #FFF;
+    font-family: Lexend Exa;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+section.who-i-am .bio{
+    margin-top: 97px;
+}
+
+section.who-i-am .bio h3{
+    text-align: center;
+    color: #FFF;
+    font-family: Lexend Exa;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+section.who-i-am .bio p{
+    display: block;
+    max-width: 969px;
+    margin: 19px auto;
+    color: #FFF;
+    font-family: Lexend Exa;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+section.who-i-am .experiences{
+    margin-top: 97px;
+}
+
+section.who-i-am .experiences h3{
+    text-align: center;
+    color: #FFF;
+    font-family: Lexend Exa;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+section.who-i-am .experiences p{
+    display: block;
+    max-width: 969px;
+    margin: 19px auto;
+    color: #FFF;
+    font-family: Lexend Exa;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+section.android-section{
+    display: none;
+}
+
+hr{
+    display: block;
+    margin: 151px auto;
+    background: #DEDEDE;
+    border: 1px solid transparent;
+    width: 100px;
+    height: 3px;
+    animation-name: desaparecer;
+    animation-duration: 5s;
+    animation-timeline: view();
+}
+
+@keyframes desaparecer{
+    0%{
+        width: 100px;
+    }
+
+    50%{
+        width: 30px;
+    }
+
+    100%{
+        width: 100px;
+    }
+}
+
+
+section.product-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 948px;
+    border-radius: 10px;
+    background: linear-gradient(rgba(35, 35, 35, 1), rgba(14, 180, 13, 1), rgb(201, 216, 201));
+}
+
+section.product-wrapper img{
+    position: absolute;
+    width: 419px;
+    bottom: 200px;
+    left: 130px;
+}
+
+section.product-wrapper .green-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1024px;
+    height: 741px;
+    margin-right: 50px;
+    border-radius: 20px;
+    background: #0EB40D;
+    box-shadow: 0px -10px 10px 0px rgba(255, 255, 255, 0.25) inset, 0px 5px 10px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+section.product-wrapper .content-green-box{
+    margin-left: 50px;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+section.product-wrapper .green-box .content-green-box h2{
+    max-width: 760px;
+    margin-left: px;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 15px 0 0 40px;
+}
+
+section.product-wrapper .green-box .content-green-box p{
+    max-width: 685px;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Montserrat;
+    font-size: 40px;
+    margin: 30px 0 0 40px;
+}
+
+section.product-wrapper .green-box .content-green-box button{
+    width: 436px;
+    height: 83px;
+    margin-right: 150px;
+    border-radius: 10px;
+    border: 2px solid rgba(42, 136, 40, 0.53);
+    background: #232323;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 50px 0 0 40px;
+}
+
+section.product-wrapper .green-box .content-green-box button a{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+section.common-questions{
+    margin-top: 111px;
+}
+
+section.common-questions .common-questions-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.common-questions h2{
+    text-align: center;
+    color: #FFF;
+    font-family: Lexend Exa;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+section.common-questions details summary{
+    width: 969px;
+    height: 110px;
+    list-style-type: none;
+    border-radius: 10px 10px 0 0;
+    background: var(--caixas-de-perguntas, rgba(187, 187, 187, 0.70));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 22px;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    /* perguntas */
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 110px;
+    }
+
+    section.common-questions details summary:hover{
+        background: var(--caixas-de-perguntas, rgba(180, 180, 180, 0.7));
+    }
+
+    section.common-questions details summary:active{
+        background: var(--caixas-de-perguntas, rgba(187, 187, 187, 0.70));
+    }    
+
+    section.common-questions details div{
+    width: 969px;
+    font-family: Montserrat;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(154, 154, 154, 0.53);  
+    transition: 1s ease-in all;
+    }
+
+    section.common-questions details p{
+    margin: 0 auto;
+    text-align:center;
+    max-width: 700px;
+    line-height: 28px;
+    font-size: 20px;
+    padding: 12px;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    footer{
+        margin-top: 200px;
+        background: var(--caixas-de-perguntas, rgba(187, 187, 187, 0.70));
+        padding: 25px;
+    }
+
+    footer p{
+        text-align: center;
+        color: #FFF;
+        font-family: Montserrat;
+        font-weight: 400;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+
+
+    /********************************************
+    *********************************************
+    ----------------media queries----------------
+    *********************************************
+    ********************************************/
+
+    /*---FOR TABLETS----*/
+    @media screen and (max-width: 992px){
+        
+        .container{
+            max-width: 92%;
+            margin: 0 auto;
+        }
+
+        
+        header nav ul li a::after{
+            display: none;
+        }
+        
+        
+        div.right-column{
+            display: none;
+        }
+        
+        
+        section.hero-section{
+            padding-top: 119px;
+        }
+        
+
+
+        section.hero-section .hero-content{
+            justify-content: center;
+        }
+
+        section.hero-section .specific-alignment-tablets{
+            margin: 0 0px 0 50px;
+        }
+
+        section.hero-section .img-maxsuel{
+            width: 300px;
+            height: 380px;
+        } 
+        
+        section.hero-section div h2{
+            max-width: 363px;
+            font-size: 35px;
+        }
+
+        div.links-tablets{
+            max-width: 250px;
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            margin-top: 52px;
+        }
+
+        div.links-tablets .gmail-adjust{
+            width: 32px;
+            height: 28px;
+        }
+
+        section.hero-section .download-ebook{
+            width: 250px;
+            height: 57px;
+        }
+        
+        section.hero-section .download-ebook a{
+            width: 247px;
+            font-size: 14px;
+        }
+
+        div.arrow{
+            width: 40px;
+            margin: 40px 430px;
+        }
+
+        section.who-i-am{
+            margin-top: 403px;
+        }
+        
+        section.who-i-am div h2{
+            font-size: 25px;
+        }
+        
+        section.who-i-am .bio{
+            margin-top: 97px;
+        }
+        
+        section.who-i-am .bio h3{
+            font-size: 22px;
+        }
+        
+        section.who-i-am .bio p{
+            max-width: 800px;
+            font-size: 20px;
+        }
+        
+        section.who-i-am .experiences{
+            margin-top: 97px;
+        }
+        
+        section.who-i-am .experiences h3{
+            font-size: 22px;
+        }
+        
+        section.who-i-am .experiences p{
+            max-width: 800px;
+            font-size: 20px;
+        }
+
+        section.product-wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            min-width: 680px;
+            height: 553px;
+            border-radius: 10px;
+            background: linear-gradient(rgba(35, 35, 35, 1), rgba(14, 180, 13, 1), rgb(201, 216, 201));
+        }
+        
+        section.product-wrapper img{
+            position: absolute;
+            width: 258.181px;
+            bottom: 120px;
+            left: 60px;
+        }
+        
+        section.product-wrapper .green-box{
+            width: 650px;
+            height: 431px;
+            margin-left: 186px;
+        }
+        
+        section.product-wrapper .content-green-box{
+            margin: 0 60px;
+            max-width: 560px;
+        }
+        
+        section.product-wrapper .green-box .content-green-box h2{
+            color: #FFF;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        
+        section.product-wrapper .green-box .content-green-box p{
+            color: #FFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-family: Montserrat;
+            font-size: 25px;
+        }
+        
+        section.product-wrapper .green-box .content-green-box button{
+            width: 292px;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        section.product-wrapper .green-box .content-green-box button .link-product{
+            width: 292px;
+            height: 55px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 50px;
+        }
+        
+        
+        section.common-questions{
+            margin-top: 178px;
+        }
+        
+        
+        section.common-questions h2{
+            font-size: 25px;
+        }
+        
+        section.common-questions details summary{
+            font-size: 20px;
+            line-height: 80px;
+            width: 650px;
+            height: 80px;
+
+            }
+        
+        
+            section.common-questions details div{
+            width: 650px;
+            }
+
+
+            section.common-questions details p{
+            margin: 0 auto;
+            text-align:center;
+            max-width: 700px;
+            line-height: 28px;
+            font-size: 20px;
+            padding: 12px;
+            color: #FFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+        
+            footer{
+                margin-top: 200px;
+                background: var(--caixas-de-perguntas, rgba(187, 187, 187, 0.70));
+                padding: 25px;
+            }
+        
+            footer p{
+                text-align: center;
+                color: #FFF;
+                font-family: Montserrat;
+                font-weight: 400;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+        
+        
+
+         }
+    
+
+            /*---FOR ANDROID----*/
+            @media screen and (max-width: 576px) {
+                
+            .container{
+                max-width: 92%;
+                margin: 0 auto;
+            }
+
+            header{
+                width: 100%;
+                padding: 41px;
+            }
+            
+            header nav ul{
+                display: flex;
+                justify-content: space-around;
+            }
+            
+
+            header nav ul li a{
+                color: #FFF;
+                font-size: 10px;
+            }
+
+            header nav ul li a::after{
+                color:#FFF;
+                content: "";
+                width: 0;
+                height: 0;
+                top: 0;
+                left: 0;
+                transition: 0;
+            }
+
+            div.right-column{
+                display: none;
+            }
+
+            section.hero-section{
+                padding-top: 87px;
+            }
+
+            section .container .hero-content{
+                display: flex;
+                justify-content: center;
+            }
+
+            section.hero-section .specific-alignment-tablets{
+                margin: 0 0px 0 0px;
+            }
+
+            section.hero-section img{
+                display: none;
+            }
+
+            section.hero-section div h2{
+                max-width: 222px;
+                color: #DEDEDE;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                font-family: Lexend Exa;
+                font-size: 22px;
+                color: #DEDEDE;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                font-family: Lexend Exa;
+                animation-name: apresentacao;
+                animation-duration: 1.8s;
+                animation-timing-function: ease-out;
+                animation-delay: 1s;
+            }
+
+            div.links-tablets{
+                display: none;
+            }
+
+            section.hero-section .links-android{
+                display: flex;
+                margin-top: 20px;
+                justify-content: center;
+            }
+            
+            section.hero-section .links-android img{
+                display: inline-block;
+                margin: 0 12px;
+                width: 30px;
+                height: 30px;
+            }
+
+            section.hero-section .links-android .gmail-adjust{
+                width: 30px;
+                height: 27px;
+            }
+            
+            section.hero-section .download-ebook{
+                width: 225px;
+                height: 43px;
+                flex-shrink: 0;
+                border-radius: 10px;
+                border: 2px solid #7FA1AE;
+                background: #065471;
+                margin-top: 23px;
+                transition: .2s ease all;
+            }
+            
+            section.hero-section .download-ebook a{
+                width: 222px;
+                height: 40px;
+                display: block;
+                text-transform: uppercase;
+                color: #FFF;
+                line-height: 40px;
+                font-family: Lexend Exa;
+                font-size: 10px;
+            }
+
+            div.arrow{
+                width: 40px;
+                margin: 25px auto;
+                padding: 2px;
+            }
+
+            div.arrow img{
+                width: 20px;
+                display: block;
+            }
+
+            section.product-wrapper{
+                justify-content: space-around;
+                width: 359px;
+                min-width: 350px;
+                height: 282px;
+            }
+            
+            section.product-wrapper img{
+                width: 105.185px;
+                height: 139px;
+                bottom: 70px;
+                left: 5px;
+            }
+            
+            section.product-wrapper .green-box{
+                width: 275px;
+                height: 179px;
+                margin: 0;
+            }
+            
+            section.product-wrapper .content-green-box{
+                width: 180px;
+                height: 150px;
+                margin: 0 auto;
+                max-width: 560px;
+            }
+            
+            section.product-wrapper .green-box .content-green-box h2{
+                max-width: 195px;
+                font-size: 13px;
+                margin: 10px 0 10px 0;
+            }
+            
+            section.product-wrapper .green-box .content-green-box p{
+                max-width: 192px;
+                font-size: 10px;
+                margin: 10px 0 10px 0;
+            }
+            
+            section.product-wrapper .green-box .content-green-box button{
+                width: 133px;
+                height: 27px;
+                margin: 15px 0 10px 0;
+                border-radius: 5px;
+            }
+            
+            section.product-wrapper .green-box .content-green-box button .link-product{
+                color: #FFF;
+                font-size: 9px;
+                line-height: 52px;
+                font-weight: 600;
+            }
+
+            section.who-i-am{
+                padding-top: 100px;
+                margin-top: 175px;
+            }
+            
+            section.who-i-am div h2{
+                color: #FFF;
+                font-family: Lexend Exa;
+                font-size: 17px;
+            }
+            
+            section.who-i-am .bio{
+                margin-top: 45px;
+            }
+            
+            section.who-i-am .bio h3{
+                color: #FFF;
+                font-family: Lexend Exa;
+                font-size: 14px;
+            }
+            
+            section.who-i-am .bio p{
+                max-width: 265px;
+                color: #FFF;
+                font-family: Lexend Exa;
+                font-size: 10px;
+            }
+            
+            section.who-i-am .experiences{
+                margin-top: 32px;
+            }
+            
+            section.who-i-am .experiences h3{
+                color: #FFF;
+                font-family: Lexend Exa;
+                font-size: 14px;
+            }
+            
+            section.who-i-am .experiences p{
+                max-width: 265px;
+                color: #FFF;
+                font-family: Lexend Exa;
+                font-size: 10px;
+            }
+
+            hr{
+                height: 1px;
+                margin-top: 97px;
+            }
+
+            section.android-section{
+                display: block;
+            }
+
+            section.android-section .android-wrapper{
+                display: flex;
+                justify-content: center;
+            }
+
+            section.android-section .android-wrapper img{
+                width: 124px;
+                height: 157px;
+                border-radius: 10px;
+                border: 2px solid #7FA1AE;
+                background: lightgray 50% cover no-repeat;
+            }
+
+            section.android-section .android-wrapper .android-content h2{
+                max-width: 122px;
+                margin-left: 21px;
+                color: #FFF;
+                font-family: Lexend Exa;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            section.android-section .android-wrapper .android-content p{
+                color: #FFF;
+                max-width: 130px;
+                margin: 17px 0 0 21px;
+                font-family: Lexend Exa;
+                font-size: 10px
+                }
+
+            section.android-section .android-wrapper .android-content button{
+                margin: 17px 0 0 16px;
+                width: 117px;
+                height: 35px;
+                border-radius: 10px;
+                border: 2px solid #7FA1AE;
+                background: #065471;
+            }
+
+            section.android-section .android-wrapper .android-content button a{
+                display: block;
+                width: 115px;
+                height: 33px;
+                line-height: 32px;
+                color: #FFF;
+                font-family: Lexend Exa;
+                font-size: 10px;
+            }
+
+            section.common-questions{
+                margin-top: 70px;
+            }
+            
+            section.common-questions .common-questions-flex{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            section.common-questions h2{
+                color: #FFF;
+                font-family: Lexend Exa;
+                font-size: 14px;
+            }
+            
+            section.common-questions details summary{
+                width: 280px;
+                height: 55px;
+                padding: 10px;
+                font-size: 13px;
+                line-height: 16px;
+                vertical-align: middle;
+                }
+            
+                section.common-questions details div{
+                width: 280px;
+                }
+            
+                section.common-questions details p{
+                font-size: 12px;
+                }
+
+                footer{
+                    padding: 20px;
+                }
+            
+                footer p{
+                    font-size: 10px;
+                }
+            }
